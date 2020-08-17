@@ -1,3 +1,5 @@
+#Stone:punch: Paper:hand: Scissor:scissors:
+
 ## Website Link : https://stone-paper-scissor-game.netlify.app/#
 
 ## Website Specifications:
