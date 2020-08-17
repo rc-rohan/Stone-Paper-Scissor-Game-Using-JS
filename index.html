@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock | Paper | Scissor</title>
+    <!-- Css-File -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section>
+      <header>
+        <h1>Stone Paper Scissor</h1>
+      </header>
+      <div class="score-board">
+        <div class="user-label">USER</div>
+        <div class="computer-label">COMP</div>
+        <div class="scores">
+          <span class="user-score">12</span>:<span class="computer-score">0</span>
+        </div>
+      </div>
+      <div class="result">
+        <p></p>
+      </div>
+
+      <div class="choices">
+        <div class="stone"><img src="./img/stone.png" alt="" /></div>
+        <div class="paper"><img src="./img/paper.png" alt="" /></div>
+        <div class="scissor"><img src="./img/scissor.png" alt="" /></div>
+      </div>
+    </section>
+    <div class="rules-card">
+      <div class="content">
+        <a href="#" onclick="closeInstructions()">&#10008;</a>
+        <h1>Instructions :</h1>
+        <ol>
+          <li>) It will be seven Round Match</li>
+          <li>) One scoring the maximum within the seven rounds will be declared as the winner
+          </li>
+          <li>) Every time in your round you select the button then there is glowing effect where :</li>
+          <li>) Green Color denotes You Won</li>
+          <li>) Yellow Color Denotes smae color</li>
+          <li>) Red Color Denotes You Lost</li>
+        </ol>
+      </div>
+    </div>
+    <div class="winnig-card hide">
+      <div class="image-area">
+        <img src="./img/winner-trophie.png" alt="" />
+      </div>
+      <p>Congratulaions!!! <br>
+      <span>&#128548;I will Show You Next  time!!!</span>  </p>
+    </div>
+    <div class="losing-card hide">
+      <div class="image-area">
+        <img class="animate" src="./img/loser-tease.png" alt="" />
+      </div>
+      <p>
+       <span class="prime-text"> YaY!!! You Lost</span> <br>
+        Loser!! Loser!! Loser!!
+      </p>
+
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

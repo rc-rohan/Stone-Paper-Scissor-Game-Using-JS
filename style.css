@@ -1,0 +1,168 @@
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+*::selection{
+    background: transparent;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    color: #fff ;
+    background: #06121E;
+    text-align: center;
+    padding-top:2rem ;
+    font-family:  cursive;
+    overflow: hidden;
+}
+h1{
+    letter-spacing: .5rem;
+    font-size: 5rem;
+}
+section{
+    height: 100vh;
+    width: 100vw;
+    filter: blur(2px);
+}
+.score-board{
+    border : 2px solid #fff;
+    margin: 3rem;
+    padding: 3rem 8rem;
+    font-size: 2rem;
+    display: inline-block;
+    position: relative;
+    border-radius: 1rem;
+}
+.score-board .user-label,
+.score-board .computer-label{
+    position: absolute;
+    font-size: 1.5rem;
+    border-radius: 2px;
+    padding: .5rem;
+    background: #e50000;
+    top: 3rem;
+}
+.score-board .user-label{
+    right: 89%;
+}
+.score-board .computer-label{
+    left: 89%;
+}
+.result{
+    font-size: 3rem;
+}
+.choices{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+.choices div{
+    padding: 2rem;
+    margin: 2rem;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    cursor: pointer;
+    transition: all .4s;
+}
+.choices div:hover{
+    transform: translateY(-.5rem);
+}
+
+.rules-card,
+.winnig-card,
+.losing-card,
+.draw-card{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #fff;
+    border-radius: 2rem;
+}
+.rules-card{
+    color: #333;
+    text-align: left;
+    padding: 2rem;
+    max-width: 55rem;
+}
+a{
+    text-decoration: none;
+    color: #e50000;
+    position: absolute;
+    right: 5%;
+    top: 8%;
+    font-size: 2.5rem;
+}
+.content h1{
+    font-size: 2.6rem;
+}
+ol{
+    padding: 2rem;
+}
+ol li{
+    font-size: 1.8rem;
+    padding-bottom: .5rem;
+}
+.winnig-card{
+    color: #fed301;
+    font-size: 3.5rem;
+    width: 44rem;
+    height: 20rem;
+    padding: 2rem;
+}
+.winnig-card p span{
+     font-size: 2rem;
+     color: black;
+}
+.winnig-card,
+.losing-card{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: indianred;
+}
+.winnig-card .image-area{
+    max-width: 10rem;
+}
+.winnig-card img,
+.losing-card img{
+    width: 100%;
+    height: 100%;
+}
+.losing-card .image-area{
+    max-width: 15rem;
+}
+.losing-card{
+    padding: 2rem;
+    color: yellow;
+    font-size: 2rem;
+    width: 44rem;
+}
+.losing-card p span{
+    font-size: 2.5rem;
+    color: yellow;
+    line-height: 2rem;
+}
+.animate{
+    animation: shake .2s linear infinite alternate;
+}
+@keyframes shake{
+    0%{
+        transform: translate(0 , .5rem);
+    }
+}
+.show{
+    visibility: visible;
+    opacity: 1;
+    transition: opacity .6s;
+}
+.hide{
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .6s;
+}
